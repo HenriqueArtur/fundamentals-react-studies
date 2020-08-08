@@ -1,10 +1,12 @@
 import React from 'react'
 
 export default props => {
-    var floor = props.floor
-    var roof = props.roof
+    const { floor, roof } = props
     return (
         <>
+            <h2>Random Number</h2>
+            <p><strong>Min: </strong>{ floor } | <strong>Max: </strong>{ roof }</p>
+            <p></p>
             <p>The random number is <strong>{ randomInt(floor, roof) }</strong></p>
         </>
     )
