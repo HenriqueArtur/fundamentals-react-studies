@@ -2,6 +2,9 @@ import React from 'react'
 import './App.css'
 
 import Card from './components/layout/Card'
+
+import Family from './components/basics/Family'
+import FamilyMember from './components/basics/FamilyMember'
 import Random from './components/basics/Random'
 import Fragment from './components/basics/Fragment'
 import WithParams from './components/basics/WithParams'
@@ -11,7 +14,13 @@ export default _ =>
     <div className="App">
         <h1>Fundamentals React</h1>
         <div className="Cards">
-            <p>next color: 	#8c1eff</p>
+            <Card title="#05 - Family Component" color="#8c1eff">
+                <Family lastName="Cordeiro">
+                    <FamilyMember name="Pedro" />
+                    <FamilyMember name="Ana" />
+                    <FamilyMember name="Artur" />
+                </Family>
+            </Card>
             <Card title="#04 - Random Challenge" color="#f222ff">
                 <Random floor={5} roof={11} />
             </Card>
