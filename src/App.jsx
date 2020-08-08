@@ -3,6 +3,8 @@ import './App.css'
 
 import Card from './components/layout/Card'
 
+import IndirectMother from './components/communication/IndirectMother'
+import DirectMother from './components/communication/DirectMother'
 import UserInfo from './components/conditional/UserInfo'
 import EvenOrOdd from './components/conditional/EvenOrOdd'
 import ProductsTable from './components/repeat/ProductsTable'
@@ -18,10 +20,18 @@ export default _ =>
     <div className="App">
         <h1>Fundamentals React</h1>
         <div className="Cards">
+            <Card title="#10 - Indirect Communication" color="#8c1eff">
+                <IndirectMother />
+            </Card>
+
+            <Card title="#09 - Direct Communication" color="#f222ff">
+                <DirectMother />
+            </Card>
+
             <Card title="#08 - Conditional Rendering" color="#ff2975">
                 <EvenOrOdd number={21} />
                 <UserInfo user={{name: 'Artur'}} />
-                {/* <UserInfo user={{email: 'artur@gmail.com'}} /> */}
+                <UserInfo user={{email: 'artur@gmail.com'}} />
             </Card>
 
             <Card title="#07 - Repeat Challenge" color="#ff901f">
