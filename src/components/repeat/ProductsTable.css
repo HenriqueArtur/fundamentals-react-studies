@@ -1,0 +1,9 @@
+table, thead, tbody, th, td {
+    border: 2px solid purple;
+    border-collapse: collapse;
+    padding: 5px 5px;
+}
+
+th {
+    color: white;
+}
