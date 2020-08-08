@@ -3,6 +3,8 @@ import './App.css'
 
 import Card from './components/layout/Card'
 
+import Counter from './components/counter/Counter'
+import Input from './components/form/Input'
 import IndirectMother from './components/communication/IndirectMother'
 import DirectMother from './components/communication/DirectMother'
 import UserInfo from './components/conditional/UserInfo'
@@ -20,6 +22,14 @@ export default _ =>
     <div className="App">
         <h1>Fundamentals React</h1>
         <div className="Cards">
+            <Card title="#12 - Counter" color="#ff901f">
+                <Counter initialNumber={10} />
+            </Card>
+
+            <Card title="#11 - Component Controlled (Input)" color="#ffd319">
+                <Input />
+            </Card>
+
             <Card title="#10 - Indirect Communication" color="#8c1eff">
                 <IndirectMother />
             </Card>
