@@ -3,6 +3,7 @@ import './App.css'
 
 import Card from './components/layout/Card'
 
+import Megasena from './components/megasena/Megasena'
 import Counter from './components/counter/Counter'
 import Input from './components/form/Input'
 import IndirectMother from './components/communication/IndirectMother'
@@ -22,6 +23,10 @@ export default _ =>
     <div className="App">
         <h1>Fundamentals React</h1>
         <div className="Cards">
+            <Card title="#13 - Mega-Sena Challend" color="#ff2975">
+                <Megasena qtd={7} />
+            </Card>
+
             <Card title="#12 - Counter" color="#ff901f">
                 <Counter initialNumber={10} />
             </Card>
